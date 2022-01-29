@@ -1,0 +1,34 @@
+<h1 class="text-center d-none d-lg-block">View Stock</h1>
+
+<div class="container">
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Ticker</th>
+        <th scope="col">Date</th>
+        <th scope="col">Open</th>
+        <th scope="col">High</th>
+        <th scope="col">Low</th>
+        <th scope="col">Close</th>
+        <th scope="col">Volume</th>
+        <th scope="col">Last Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {{#each rows}}
+      <tr>
+        <th scope="row">{{this.ticker}}</th>
+        <td>{{this.date}}</td>
+        <td>{{this.open}}</td>
+        <td>{{this.high}}</td>
+        <td>{{this.low}}</td>
+        <td>{{this.close}}</td>
+        <td>{{this.volume}}</td>
+        <td>{{this.lastupdated}}</td>
+      </tr>
+      {{/each}}
+
+    </tbody>
+  </table>
+</div>

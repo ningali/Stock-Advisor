@@ -1,0 +1,28 @@
+<h1 class="text-center d-none d-lg-block"> Stocks' Information</h1>
+
+<div class="container">
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Ticker</th>
+        <th scope="col">Sector</th>
+        <th scope="col">PercentageChange</th>
+        <th scope="col">StartDate</th>
+        <th scope="col">EndDate</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {{#each rows}}
+      <tr>
+        <th scope="row">{{this.ticker}}</th>
+        <td>{{this.sector}}</td>
+        <td>{{this.percentageChange}}</td>
+        <td>{{this.startDate}}</td>
+        <td>{{this.endDate}}</td>
+      </tr>
+      {{/each}}
+
+    </tbody>
+  </table>
+</div>
